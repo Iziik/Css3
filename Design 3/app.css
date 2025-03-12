@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #F7FDFC;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  gap: 20px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+  width: 700px;
+  min-width: 310px;
+}
+
+p{
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+color: gray;
+}
+
+.outline{
+    padding: 40px;
+}
+
+.text{
+    padding: 10px 60px;
+    margin-right: 30px;
+}
+
+h4{
+    margin-top: 20px;
+}
+
+
+/* Form container styles */
+form {
+    background-color: white; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space around the form */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows with dynamic height */
+    gap: 20px; /* Space between grid items */
+    max-width: 600px; /* Set a maximum width for the form */
+    margin: auto; /* Center the form horizontally */
+  }
+  
+  /* Label styles for better readability */
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* Ensure labels are above inputs */
+  }
+  
+  /* Input and select styles */
+  input,
+  select {
+    width: 100%; /* Full width of the container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  /* Highlight active inputs */
+  input:focus,
+  select:focus {
+    border-color: blue; /* Blue border on focus */
+    outline: none;
+    box-shadow: 0 0 5px blue; /* Subtle blue glow */
+  }
+  
+  .full-line{
+    grid-column: 1 / -1; /* Span across both columns */
+  }
+  
+  /* Footer styling */
+  footer {
+    grid-column: 1 / -1; /* Span across both columns */
+    text-align: center; /* Center-align footer content */
+  }
+  
+  /* Button styling */
+  button.btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn:hover {
+    background-color: darkblue;
+  }
+
+@media (max-width: 767px) {
+  body {
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: auto; /* Adjust rows to auto height */
+  }
+
+  form {
+    grid-template-columns: 1fr; /* Single column form layout */
+    max-width: 100%; /* Full width for the form */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .full-line {
+    grid-column: 1 / -1; /* Span across the single column */
+  }
+
+  h1 {
+    font-size: 32px; /* Decrease font size for smaller screens */
+  }
+
+  p {
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+  .outline {
+    padding: 20px; /* Reduce padding */
+  }
+
+  .text {
+    padding: 5px 30px; /* Reduce padding */
+    margin-right: 15px; /* Reduce margin */
+  }
+}

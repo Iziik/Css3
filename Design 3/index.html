@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Form Grid Example</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"><img src="Assests/Logo.png" class="text" alt="logo" /></a>
+        <h1 class="text">For Individuals</h1>
+        <p class="text">
+          Start benefiting from the wellness experience. For companies looking
+          to increase productivity and improve organizational wellness.
+        </p>
+      </nav>
+    </header>
+
+    <main class="outline">
+      <form action="/api/v1/Register" method="post">
+        <div>
+          <label for="First-name">First name</label>
+          <input id="First-name" name="title" placeholder="Tolu" required />
+        </div>
+
+        <div>
+          <label for="Last-name">Last name</label>
+          <input type="text" id="Last-name"  required />
+        </div>
+
+        <div>
+          <label for="Gender-category">Gender</label>
+          <select name="Gender-category" id="Gender-category" required>
+            <option value="" disabled selected>Select here</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="event-date">Date Of Birth</label>
+          <input type="date" id="event-date" name="event-date" value="select here" required />
+        </div>
+
+        <div>
+            <label for="Weight">Weight (KG)</label>
+            <input type="text" id="Weight" placeholder="Enter Weight" required />
+        </div>
+
+        <div>
+            <label for="Height">Height (CM)</label>
+            <input type="text" id="Height" placeholder="Enter Height here" required />
+        </div>
+
+        <div class="full-line">
+            <label for="Activity">Activity-Level</label>
+            <select name="Activity" id="Activity" required>
+                <option value="" disabled selected>Select here</option>
+                <option value="Sendentary">Sendentary</option>
+                <option value="Lightly active">Lightly active</option>
+                <option value="Moderately active">Moderately active</option>
+                <option value="Vigoroulsyy active">Vigoroulsyy active</option>
+                <option value="Extremely active">Extremely active</option>
+              </select>
+        </div>
+
+        <div class="full-line">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required></input>
+        </div>
+
+        <footer>
+          <button class="btn" type="submit">Register</button>
+          
+         <h4>By clicking on continue, I agree to the 
+            <a href="">terms of use</a> and acknowledge that I have read the 
+            <a href="">Privacy policy</a>
+         </h4>
+        </footer>
+      </form>
+    </main>
+  </body>
+</html>
